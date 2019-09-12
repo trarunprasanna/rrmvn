@@ -4,17 +4,17 @@
 	<artifactId>maven-release-plugin-example</artifactId>
 	<version>0.2-SNAPSHOT</version>
 	<scm>
-		<url>https://github.com/arpitaggarwal/maven-release-plugin-example</url>
-		<connection>scm:git:https://github.com/arpitaggarwal/maven-release-plugin-example.git</connection>
+		<url>https://github.com/trarunprasanna/rrmvn</url>
+		<connection>scm:git:https://github.com/trarunprasanna/rrmvn.git</connection>
       <tag>HEAD</tag>
   </scm>
 	
 	<!-- Repository Information -->
 	<distributionManagement>
 		<repository>
-			<id>nexus-releases</id>
+			<id>nexus-snapshots</id>
 			<!-- http://localhost:8081/repository/<repository-name> -->
-			<url>http://localhost:8081/repository/api-release</url>
+			<url>http://35.154.253.196:8081/repository/test-mvn-rel/</url>
 		</repository>
 	</distributionManagement>
 	<profiles>
@@ -63,8 +63,8 @@
 							</execution>
 						</executions>
 						<configuration>
-							<serverId>nexus-releases</serverId>
-							<nexusUrl>http://localhost:8081/</nexusUrl>
+							<serverId>nexus-snapshots</serverId>
+							<nexusUrl>http://35.154.253.196:8081/</nexusUrl>
 							<skipStaging>true</skipStaging>
 						</configuration>
 					</plugin>
